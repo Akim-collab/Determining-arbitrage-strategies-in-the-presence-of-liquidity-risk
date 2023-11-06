@@ -1,3 +1,18 @@
+"""
+This program will be a simplified example to illustrate the concept of
+identifying arbitrage opportunities and considering liquidity risk.
+
+For this program, we will focus on a simple arbitrage opportunity
+in the foreign exchange market (Forex). We will use fictional data
+and a basic liquidity risk assessment.
+
+In this program, we simulate exchange rates, bid-ask spreads,
+and liquidity risk. The find_arbitrage_opportunity function
+calculates the potential arbitrage opportunity, and the assess_liquidity function
+simulates the liquidity risk assessment. The main loop continuously
+looks for arbitrage opportunities and considers liquidity before executing the arbitrage.
+"""
+
 import random
 
 # Simulated forex exchange rates (EUR/USD and GBP/USD)
