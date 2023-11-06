@@ -14,7 +14,6 @@ initial_balance_eur = 0
 initial_balance_gbp = 0
 
 
-
 def assess_liquidity():
     """
     Function to assess liquidity risk
@@ -41,7 +40,6 @@ def find_arbitrage_opportunity():
         return True, eur_gbp_bid, eur_gbp_ask
     else:
         return False, 0, 0
-
 
 
 def main():
