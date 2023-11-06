@@ -16,7 +16,7 @@ looks for arbitrage opportunities and considers liquidity before executing the a
 import random
 
 # Simulated forex exchange rates (EUR/USD and GBP/USD)
-eur_usd_rates = [1.10, 1.12, 1.11, 1.13, 1.09]
+eur_usd_rates = [2.5, 3.12, 2.11, 1.13, 1.09]
 gbp_usd_rates = [1.25, 1.24, 1.26, 1.27, 1.23]
 
 # Simulated bid-ask spreads for EUR/USD and GBP/USD
@@ -42,15 +42,18 @@ def find_arbitrage_opportunity():
     """
     Function to identify arbitrage opportunities
     """
-    eur_usd_bid = eur_usd_rates[0]
-    eur_usd_ask = eur_usd_rates[0] + eur_usd_spread
-    gbp_usd_bid = gbp_usd_rates[0]
-    gbp_usd_ask = gbp_usd_rates[0] + gbp_usd_spread
+
+    ind = random.randint(0, 4)
+
+    eur_usd_bid = eur_usd_rates[ind]
+    eur_usd_ask = eur_usd_rates[ind] + eur_usd_spread
+    gbp_usd_bid = gbp_usd_rates[ind]
+    gbp_usd_ask = gbp_usd_rates[ind] + gbp_usd_spread
 
     # Calculate the cross rates
     eur_gbp_bid = eur_usd_bid / gbp_usd_ask
     eur_gbp_ask = eur_usd_ask / gbp_usd_bid
-
+    print(eur_gbp_ask, eur_gbp_bid)
     if eur_gbp_ask < eur_gbp_bid:
         return True, eur_gbp_bid, eur_gbp_ask
     else:
