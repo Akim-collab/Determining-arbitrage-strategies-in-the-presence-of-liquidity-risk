@@ -32,3 +32,20 @@ These strategies may include buying and selling financial instruments to profit 
 
 The program should provide clear and concise output, indicating whether arbitrage opportunities were found and whether they were executed.
 Display information on liquidity risk assessments and the resulting portfolio balances after arbitrage transactions.
+
+
+## Literature review
+
+1. The Harrison–Pliska arbitrage pricing theorem under transaction costs, Kabanov Yu. M., Stricker Ch.
+
+**Overview**
+
+The presented article extends the Harrison-Pliska arbitrage pricing theorem to a model of a foreign exchange market with multiple assets in discrete time and transaction costs. The authors investigate the absence of arbitration and provide the necessary and sufficient conditions for this. They also prove the hedging theorem without additional assumptions. The article concludes with a discussion of the differences between their approach and other articles on this topic.
+
+The text is dedicated to arbitrage in the frictionless market. It introduces the concept of convertible assets and classifies assets into equivalence classes based on their convertibility. The text then defines sets of attainable wealth and hedged requirements. It presents the conditions for refusal of arbitration and demonstrates their equivalence in terms of strict and weak arbitration possibilities. To illustrate the concepts, an example of a single-period model with two assets is given.
+
+The article deals with the problem of hedging conditional claims in financial markets, taking into account transaction costs. The authors prove several theorems related to the existence of non-arbitrage and a set of hedging strategies. They also consider generalizing the model and discuss the implications of different transaction cost structures.
+
+**Useful links**
+
+1. https://medium.datadriveninvestor.com/calculating-risk-management-statistics-in-python-756ab3cb1851
