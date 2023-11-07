@@ -29,6 +29,33 @@ initial_balance_eur = 0
 initial_balance_gbp = 0
 
 
+def calculate_liquidity_risk(trading_volume, bid_ask_spread):
+    """
+    Calculate liquidity risk for an asset based on trading volume and bid-ask spread.
+
+    Args:
+        trading_volume (float): Average daily trading volume of the asset.
+        bid_ask_spread (float): Average bid-ask spread of the asset.
+
+    Returns:
+        str: A qualitative assessment of liquidity risk.
+
+    Example usage:
+
+    trading_volume = 75000  # Replace with the actual trading volume of the asset.
+    bid_ask_spread = 0.03  # Replace with the actual bid-ask spread of the asset.
+
+    liquidity_risk = calculate_liquidity_risk(trading_volume, bid_ask_spread)
+    print("Liquidity Risk:", liquidity_risk)
+    """
+    if trading_volume < 100000:  # You can adjust this threshold based on your criteria.
+        return "High Liquidity Risk"
+    elif trading_volume < 500000 and bid_ask_spread > 0.05:
+        return "Moderate Liquidity Risk"
+    else:
+        return "Low Liquidity Risk"
+
+
 def assess_liquidity():
     """
     Function to assess liquidity risk

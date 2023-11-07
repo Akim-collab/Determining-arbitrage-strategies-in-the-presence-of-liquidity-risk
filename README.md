@@ -49,3 +49,4 @@ The article deals with the problem of hedging conditional claims in financial ma
 **Useful links**
 
 1. https://medium.datadriveninvestor.com/calculating-risk-management-statistics-in-python-756ab3cb1851
+2. 
